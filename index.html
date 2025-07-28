@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>M@xd@n Portfolio</title>
+
+</head>
+<body>
+
+  <header>
+    <img src="maxwell.jpg" alt="Maxwel's Photo">
+    <div class="header-text">
+      <h1>M@xd@n's Portfolio</h1>
+      <p>software development | Network engineer | Hands-on Intern</p>
+    </div>
+  </header>
+
+  
+
+  <!-- ✅ About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p id="typing-text"></p>
+    
+  </section>
+
+  <!-- ✅ Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Windows Installation & Network Setup</h3>
+      <p>Installed Windows OS and configured internet access for office computers. Assigned IP addresses and set up routers.</p>
+    </div>
+    <div class="project">
+      <h3>Tax Management System Training</h3>
+      <p>Learned how to input taxpayers data and process thier taxes in the portal using GITMIS during my internship.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill"> <strong>Software:</strong> Windows OS, Router Configuration, KTU Connect</div>
+    <div class="skill"> <strong>Soft Skills:</strong> Communication, Time Management, Teamwork</div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="maxwelldanso2001@gmail.com">maxwelldanso2001@gmail.com</a></p>
+    <p>Phone: 0543731949</p>
+    
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 Maxwel's Portfolio</p>
+  </footer>
+
+  <!-- ✅ Typing Script -->
+  <script>
+    const textElement = document.getElementById('typing-text');
+    const fullText = "Hello! I'm Maxwel Danso, a dedicated student pursuing HND in computer networking management. I have hands-on experience in IT support, software installation, electrical wiring, network configuration, and more through various internships and fieldwork.";
+    let index = 0;
+
+    function typeLetterByLetter() {
+      if (index < fullText.length) {
+        textElement.innerHTML += fullText.charAt(index);
+        index++;
+        setTimeout(typeLetterByLetter, 40);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', typeLetterByLetter);
+  </script>
+
+</body>
+</html>
